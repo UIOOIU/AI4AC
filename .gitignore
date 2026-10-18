@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Outputs
+outputs/
+logs/
+tmp/
+
+# Ignore data directory
+**/data/
+
+# Environment
+venv/
+env/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+.trae/
+*.iml
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build
+build/
+dist/
+node_modules/
+tmp/
+backup/
+*.egg-info/
+
+# Testing
+.pytest_cache/
+.tox/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea/*
+!.idea/runConfigurations/
