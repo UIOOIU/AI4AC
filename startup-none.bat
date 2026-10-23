@@ -1,16 +1,16 @@
 @echo off
 
-REM ÉèÖÃÏîÄ¿Ä¿Â¼Â·¾¶
+REM è®¾ç½®é¡¹ç›®ç›®å½•è·¯å¾„
 set PROJECT_DIR=%~dp0
 
-REM ÇĞ»»µ½ÏîÄ¿Ä¿Â¼
+REM åˆ‡æ¢åˆ°é¡¹ç›®ç›®å½•
 cd %PROJECT_DIR%
 
-REM ¼¤»îPython»·¾³£¨¼ÙÉèÊ¹ÓÃAnaconda£©
+REM æ¿€æ´»Pythonç¯å¢ƒï¼ˆå‡è®¾ä½¿ç”¨Anacondaï¼Œå¹¶ä¸”ä¸‹é¢æ˜¯å®‰è£…è·¯å¾„ï¼‰
 call D:\DevSoft\python-venv\research-venv\Scripts\activate.bat
 
 @echo off
-REM ¼ì²é½ø³ÌÊÇ·ñ´æÔÚ
+REM æ£€æŸ¥è¿›ç¨‹æ˜¯å¦å­˜åœ¨
 REM tasklist | find "jupyter-notebook.exe" > nul
 REM if not errorlevel 1 (
 REM	taskkill /f /im jupyter-notebook.exe
@@ -18,5 +18,5 @@ REM )
 
 taskkill /f /im jupyter-notebook.exe
 
-REM Æô¶¯Jupyter Notebook
+REM å¯åŠ¨Jupyter Notebook
 jupyter notebook

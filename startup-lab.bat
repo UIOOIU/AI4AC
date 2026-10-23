@@ -1,16 +1,16 @@
 @echo off
 
-REM ÉèÖÃÏîÄ¿Ä¿Â¼Â·¾¶
+REM è®¾ç½®é¡¹ç›®ç›®å½•è·¯å¾„
 set PROJECT_DIR=%~dp0
 
-REM ÇĞ»»µ½ÏîÄ¿Ä¿Â¼
+REM åˆ‡æ¢åˆ°é¡¹ç›®ç›®å½•
 cd %PROJECT_DIR%
 
 @echo off
-REM ¼ì²é½ø³ÌÊÇ·ñ´æÔÚ£¬´æÔÚÔòkill
+REM æ£€æŸ¥è¿›ç¨‹æ˜¯å¦å­˜åœ¨ï¼Œå­˜åœ¨åˆ™kill
 REM taskkill /f /im jupyter-notebook.exe
 tasklist | find "jupyter-lab.exe" > nul && taskkill /f /im jupyter-lab.exe
 
 
-REM Æô¶¯Jupyter Notebook
+REM å¯åŠ¨Jupyter Notebook
 cmd.exe /k "conda activate && jupyter lab"
